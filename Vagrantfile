@@ -16,6 +16,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get -y install build-essential autoconf libssl-dev libreadline-dev zlib1g-dev silversearcher-ag zsh clang global
+    apt-get -y install build-essential autoconf libssl-dev libreadline-dev zlib1g-dev silversearcher-ag zsh clang global php7.0-mbstring php7.0-zip
   SHELL
 end
